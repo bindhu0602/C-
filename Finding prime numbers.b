@@ -26,7 +26,7 @@ void main()
 {
     for(int i=100;i<1000;i++)
     {
-        if(prime(i) && prime(sumofdig(1)))
+        if(prime(i) && prime(sumofdig(i)))
         {
             printf("%d ",i);
         }
