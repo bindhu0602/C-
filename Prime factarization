@@ -1,0 +1,19 @@
+#include<stdio.h>
+void prime(int n,int a)
+{
+    if(n==1)
+    return;
+    while(n%a!=0)
+    {
+        a++;
+    }
+    printf("%d ",a);
+    prime(n/a,2);
+}
+void main()
+{
+    int n;
+    printf("enter a number");
+    scanf("%d",&n);
+    prime(n,2);
+}
